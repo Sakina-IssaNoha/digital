@@ -1,0 +1,15 @@
+<table>
+    <th>
+        <td>Transaction Amount</td>
+        <td>Transaction Date</td>
+        <td>Origin Account</td>
+    </th>        
+
+    {%for customer in Customers%}
+    <tr>
+        <td>{{transaction.transaction_amount}}</td>
+        <td>{{transaction.transaction_date}}</td>
+        <td>{{transaction.origin_account}}</td>
+    </tr>
+    {% endfor %}
+</table> 

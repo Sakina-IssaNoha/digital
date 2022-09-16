@@ -1,0 +1,15 @@
+<table>
+    <th>
+        <td>Customer Id</td>
+        <td>Transaction</td>
+        <td>Bonus</td>
+    </th>        
+
+    {%for reward in rewards%}
+    <tr>
+        <td>{{reward.customer_id}}</td>
+        <td>{{customer.transaction}}</td>
+        <td>{{customer.bonus}}</td>
+    </tr>
+    {% endfor %}
+</table> 

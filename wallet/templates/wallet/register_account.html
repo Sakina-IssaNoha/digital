@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using django"
+    />
+  </head>
+  <body>
+    <h2> Account Registration</h2>
+
+    <form method="POST" class = "post-form">{% csrf_token %}
+    
+        {{ form.as_p }}
+    
+        <button type = "submit" class="save btn btn-default">Save</button>
+    </form>
+    
+  </body>
+</html>

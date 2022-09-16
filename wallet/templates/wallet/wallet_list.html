@@ -1,0 +1,15 @@
+<table>
+    <th>
+        <td>Balance</td>
+        <td>customer</td>
+        <td>Currency</td>
+    </th>        
+
+    {%for Currency in Currencys%}
+    <tr>
+        <td>{{currency.balance}}</td>
+        <td>{{currency.customer}}</td>
+        <td>{{currency.currency}}</td>
+    </tr>
+    {% endfor %}
+</table>    

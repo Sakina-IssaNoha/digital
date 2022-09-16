@@ -1,0 +1,15 @@
+<table>
+    <th>
+        <td>Date and Time</td>
+        <td>Receipt</td>
+        <td>Name</td>
+    </th>        
+
+    {%for notification in notifications%}
+    <tr>
+        <td>{{notification.date_and_time}}</td>
+        <td>{{notification.receipt}}</td>
+        <td>{{notification.name}}</td>
+    </tr>
+    {% endfor %}
+</table>
