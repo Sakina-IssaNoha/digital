@@ -21,6 +21,9 @@ class Customer(models.Model):
     nationality=models.CharField(max_length=20,null=True)
     occupation=models.CharField(max_length=20,null=True)
     signature=models.ImageField()
+    profile_picture = models.ImageField(default='default.jpg', null=True)
+
+
     
 class Currency(models.Model):
     amount=models.IntegerField()

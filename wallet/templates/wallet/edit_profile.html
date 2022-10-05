@@ -1,0 +1,7 @@
+<form method="POST">{%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Save</button>
+    <a href="{% url 'edit_profile' id=customer.id %}">Edit Profile</a>
+
+</form>    
+        

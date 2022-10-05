@@ -1,9 +1,30 @@
-<table>
-    <th>
-        <td>Origin Country</td>
-        <td>Amount</td>
-        <td>Currency</td>
-    </th>        
+<style>
+    #mytable {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #mytable td, #currency th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      {% comment %} #staffInfo tr:nth-child(even){background-color: #C5B4E3;}
+      #staffInfo tr:{background-color: #C5B4E3;} {% endcomment %}
+      #mytable tr:hover {background-color:#7F9DAC;}
+      #mytable th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #044A7D;
+        color: white;
+      }
+</style>
+<table id="mytable">
+    <tr>
+        <th>Origin Country</th>
+        <th>Amount</th>
+        <th>Currency</th>
+    </tr>        
 
     {%for currency in currencys%}
     <tr>
